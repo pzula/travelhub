@@ -1,8 +1,11 @@
 require 'spec_helper'
 
 describe "Tripsters"  do
-  context "as a trip owner" do
+  include OmniauthHelper
+
+  context "as a trip owner", :vcr do
     before :each do
+      mock_omniauth
       visit root_path
       click_on "Login with Twitter"
       visit new_trip_path
@@ -16,7 +19,7 @@ describe "Tripsters"  do
 
 
     it "can invite a tripster from the show page, and sends tweet" do
-      click_on "Add Tripster"
+      click_on "Invite a Tripster"
       handle = "@jsl_demo" + Random.rand(1000).to_s
       fill_in "Twitter Handle", :with => handle
       click_on "Invite"
@@ -24,7 +27,7 @@ describe "Tripsters"  do
     end
 
     it "can see whether invited tripsters have registered" do
-      click_on "Add Tripster"
+      click_on "Invite a Tripster"
       handle = "@jsl_demo" + Random.rand(1000).to_s
       fill_in "Twitter Handle", :with => handle
       click_on "Invite"
@@ -35,7 +38,7 @@ describe "Tripsters"  do
     end
 
     it "can remove a tripster from the trip" do
-      click_on "Add Tripster"
+      click_on "Invite a Tripster"
       handle = "@jsl_demo" + Random.rand(1000).to_s
       fill_in "Twitter Handle", :with => handle
       click_on "Invite"

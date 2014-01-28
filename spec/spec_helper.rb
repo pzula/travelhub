@@ -5,6 +5,7 @@ require 'rspec/rails'
 require 'rspec/autorun'
 require 'capybara/rspec'
 require 'capybara/rails'
+require 'vcr'
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
@@ -17,16 +18,9 @@ ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
 RSpec.configure do |config|
   config.use_transactional_fixtures = true
 
+  config.treat_symbols_as_metadata_keys_with_true_values = true
+
   OmniAuth.config.test_mode = true
-  OmniAuth.config.mock_auth[:twitter] = OmniAuth::AuthHash.new({
-    :provider => 'twitter',
-    :uid => '2293433683',
-    :info => {
-      :nickname => 'TripsterTK' },
-    :credentials => {
-      :token => "2293433683-zQSaSAzfJdnw0HgAFhrK3QHqkFsKGklmQtL8pzv",
-      :secret => "wjXincL0RYCvh2ZgdRjX97VFZKjXBPxfQ380WFsiXDU9N"}
-  })
 
   OmniAuth.config.mock_auth[:instagram] = OmniAuth::AuthHash.new({
     :provider => 'instagram',

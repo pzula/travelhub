@@ -1,8 +1,10 @@
 require 'spec_helper'
 
 describe 'User can sign in' do
+  include OmniauthHelper
 
   it 'can login in' do
+    mock_omniauth
     visit root_path
     click_on "Login with Twitter"
     expect(page).not_to have_content "Login"
@@ -11,6 +13,7 @@ describe 'User can sign in' do
   end
 
   it 'can sign out' do
+    mock_omniauth
     visit root_path
     click_on "Login with Twitter"
     click_on "Logout"

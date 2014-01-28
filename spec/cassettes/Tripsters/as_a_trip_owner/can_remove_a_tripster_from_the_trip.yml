@@ -1,0 +1,217 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/account/verify_credentials.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.5.1
+      Authorization:
+      - OAuth oauth_consumer_key="a1rqHMev2XlWgUK6SWeiOQ", oauth_nonce="8270b3bfcfe4b55eff03da28d8245519",
+        oauth_signature="0oaAbVZLfzLbZ7i3pWO62DWQkSU%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1390882080", oauth_token="2314806716-wXhzOhqpXWc4f74cTtjvHgQtIuYc1f3ODjieVge",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '813'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 28 Jan 2014 04:08:01 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 28 Jan 2014 04:08:01 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139088208136718699; Domain=.twitter.com; Path=/; Expires=Thu,
+        28-Jan-2016 04:08:01 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '15'
+      X-Rate-Limit-Remaining:
+      - '13'
+      X-Rate-Limit-Reset:
+      - '1390882979'
+      X-Transaction:
+      - e5d75418a0c999ad
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"id":2314806716,"id_str":"2314806716","name":"TriptionaryTK","screen_name":"TriptionaryTK","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 28 03:51:03 +0000 2014","favourites_count":0,"utc_offset":-25200,"time_zone":"Arizona","geo_enabled":false,"verified":false,"statuses_count":2,"lang":"en","status":{"created_at":"Tue
+        Jan 28 04:08:00 +0000 2014","id":428016583017902080,"id_str":"428016583017902080","text":"@jsl_demo627
+        Come join trip Siam on Triptionary! http:\/\/t.co\/NaJ4yNiphp","source":"\u003ca
+        href=\"http:\/\/triptionary.tk\/\" rel=\"nofollow\"\u003eFrankenMedia\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/NaJ4yNiphp","expanded_url":"http:\/\/triptionary.tk","display_url":"triptionary.tk","indices":[49,71]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_5_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_5_normal.png","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Tue, 28 Jan 2014 04:08:01 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/user_timeline.json?count=200&user_id=2314806716
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.5.1
+      Authorization:
+      - OAuth oauth_consumer_key="a1rqHMev2XlWgUK6SWeiOQ", oauth_nonce="146f5cde59e190953e86c135f0d972a6",
+        oauth_signature="xGhyVDLc3FYJnM7vSDmy6qR1ed4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1390882081", oauth_token="2314806716-wXhzOhqpXWc4f74cTtjvHgQtIuYc1f3ODjieVge",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '885'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 28 Jan 2014 04:08:01 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 28 Jan 2014 04:08:01 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139088208164308120; Domain=.twitter.com; Path=/; Expires=Thu,
+        28-Jan-2016 04:08:01 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '177'
+      X-Rate-Limit-Reset:
+      - '1390882836'
+      X-Transaction:
+      - bbf9013dc5c5d54b
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '[{"created_at":"Tue Jan 28 04:08:00 +0000 2014","id":428016583017902080,"id_str":"428016583017902080","text":"@jsl_demo627
+        Come join trip Siam on Triptionary! http:\/\/t.co\/NaJ4yNiphp","source":"\u003ca
+        href=\"http:\/\/triptionary.tk\/\" rel=\"nofollow\"\u003eFrankenMedia\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":2314806716,"id_str":"2314806716","name":"TriptionaryTK","screen_name":"TriptionaryTK","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 28 03:51:03 +0000 2014","favourites_count":0,"utc_offset":-25200,"time_zone":"Arizona","geo_enabled":false,"verified":false,"statuses_count":2,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_5_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_5_normal.png","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/NaJ4yNiphp","expanded_url":"http:\/\/triptionary.tk","display_url":"triptionary.tk","indices":[49,71]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},{"created_at":"Tue
+        Jan 28 04:05:36 +0000 2014","id":428015982070603776,"id_str":"428015982070603776","text":"@jsl_demo714
+        Come join trip Siam on Triptionary! http:\/\/t.co\/NaJ4yNiphp","source":"\u003ca
+        href=\"http:\/\/triptionary.tk\/\" rel=\"nofollow\"\u003eFrankenMedia\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":2314806716,"id_str":"2314806716","name":"TriptionaryTK","screen_name":"TriptionaryTK","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 28 03:51:03 +0000 2014","favourites_count":0,"utc_offset":-25200,"time_zone":"Arizona","geo_enabled":false,"verified":false,"statuses_count":2,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_5_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_5_normal.png","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/NaJ4yNiphp","expanded_url":"http:\/\/triptionary.tk","display_url":"triptionary.tk","indices":[49,71]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"}]'
+    http_version: 
+  recorded_at: Tue, 28 Jan 2014 04:08:01 GMT
+- request:
+    method: post
+    uri: https://api.twitter.com/1.1/statuses/update.json
+    body:
+      encoding: US-ASCII
+      string: status=%40jsl_demo13+Come+join+trip+Siam+on+Triptionary%21+http%3A%2F%2Ftriptionary.tk
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.5.1
+      Authorization:
+      - OAuth oauth_consumer_key="a1rqHMev2XlWgUK6SWeiOQ", oauth_nonce="a887bd812469b195a4e8e6a68e77f454",
+        oauth_signature="VgTPfHMZi6IBYw0ZzAMquggWm3c%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1390882081", oauth_token="2314806716-wXhzOhqpXWc4f74cTtjvHgQtIuYc1f3ODjieVge",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '821'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 28 Jan 2014 04:08:02 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 28 Jan 2014 04:08:02 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139088208226232018; Domain=.twitter.com; Path=/; Expires=Thu,
+        28-Jan-2016 04:08:02 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Transaction:
+      - 3b2edb49519e7c1e
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"created_at":"Tue Jan 28 04:08:02 +0000 2014","id":428016591691739136,"id_str":"428016591691739136","text":"@jsl_demo13
+        Come join trip Siam on Triptionary! http:\/\/t.co\/NaJ4yNiphp","source":"\u003ca
+        href=\"http:\/\/triptionary.tk\/\" rel=\"nofollow\"\u003eFrankenMedia\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":2314806716,"id_str":"2314806716","name":"TriptionaryTK","screen_name":"TriptionaryTK","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 28 03:51:03 +0000 2014","favourites_count":0,"utc_offset":-25200,"time_zone":"Arizona","geo_enabled":false,"verified":false,"statuses_count":3,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_5_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_5_normal.png","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/NaJ4yNiphp","expanded_url":"http:\/\/triptionary.tk","display_url":"triptionary.tk","indices":[48,70]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"}'
+    http_version: 
+  recorded_at: Tue, 28 Jan 2014 04:08:01 GMT
+recorded_with: VCR 2.8.0

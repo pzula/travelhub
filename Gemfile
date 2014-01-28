@@ -49,6 +49,8 @@ group :test do
   gem 'database_cleaner'
   gem "selenium-webdriver"
   gem 'pry'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :assets do
